@@ -38,7 +38,7 @@
             {% if theme.menu_icons.enable %}
               <i class="menu-item-icon fa fa-fw fa-{{theme.menu_icons[itemName] | default('question-circle') | lower }}"></i> <br />
             {% endif %}
-            {{ __('menu.' + itemName) }}
+            <!-- {{ __('menu.' + itemName) }} -->
           </a>
         </li>
       {% endfor %}
@@ -53,7 +53,7 @@
             {% if theme.menu_icons.enable %}
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             {% endif %}
-            {{ __('menu.search') }}
+            <!-- {{ __('menu.search') }} -->
           </a>
         </li>
       {% endif %}
